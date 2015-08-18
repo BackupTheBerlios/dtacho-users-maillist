@@ -1,0 +1,181 @@
+From heidejulia at freenet.de  Wed Aug  6 13:51:10 2008
+From: heidejulia at freenet.de (heidejulia at freenet.de)
+Date: Wed, 06 Aug 2008 13:51:10 +0200
+Subject: [Dtacho-users] =?iso-8859-1?q?Fahrer-_und_Ger=E4tedaten_in_lesbar?=
+	=?iso-8859-1?q?es_Format?=
+Message-ID: <E1KQhXq-0004UW-1W@www20.emo.freenet-rz.de>
+
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/dtacho-users/attachments/20080806/c360792d/attachment.html>
+-------------- nächster Teil --------------
+Hallo,habe die Aufgabe Fahrer- und Gerätedaten aus LKW's mit neuem digital Tachometer (ist für Neufahrzeuge jetzt vorgeschrieben) auf Linux zu übernehmen und in einem lesbaren Format darzustellen. Scheitere aber bereits an dem .ddd -Datenformat.Versuche zur Konvertierung von ddd nach XML unter http://webdemo.opendtacho.org/ sind gescheitert mit dem Hinweis "Ungültiger Dateiname!" Konnte jedoch nix ungültiges erkennen.-----------------------------------------------------------------------------------M_20061475_1532_S-AB_471_WMAG07XY58V123456.DDD
+
+Gültige Dateien haben die Form C_*.DDD und M_*.DDD
+*: erlaubt sind nur alphanumerische Zeichen, Leerzeichen, Punkt, Minus und Unterstrich.-----------------------------------------------------------------------------------Kann mir einer sagen wie ich da vorgehen oder was ich da ändern kann? Oder gibt es evtl. noch ein anderes "lesbares" Format? Danke für HinweiseJulia
+Unbegrenzter Speicher, Top-Spamschutz, 120 SMS und eigene E-MailDomain inkl.
+http://office.freenet.de/dienste/emailoffice/produktuebersicht/power/mail/index.html
+
+From deetee at users.berlios.de  Wed Aug  6 18:30:07 2008
+From: deetee at users.berlios.de (Gerald Schnabel)
+Date: Wed, 06 Aug 2008 18:30:07 +0200
+Subject: [Dtacho-users] =?iso-8859-15?q?_Fahrer-_und_Ger=E4tedaten_in_lesb?=
+ =?iso-8859-15?q?ares_Format?=
+Message-ID: <1911185294@web.de>
+
+Hallo,
+
+Julia Heide schrieb am 06.08.08, 13:59:51 Uhr:
+
+> Versuche zur Konvertierung von ddd nach XML unter http://webdemo.opendtacho.org/
+> sind gescheitert mit dem Hinweis "Ungültiger Dateiname!" Konnte jedoch nix ungültiges
+> erkennen.
+>
+> M_20061475_1532_S-AB_471_WMAG07XY58V123456.DDD
+> 
+> Gültige Dateien haben die Form C_*.DDD und M_*.DDD
+> *: erlaubt sind nur alphanumerische Zeichen, Leerzeichen, Punkt, Minus und Unterstrich.
+
+Hm, das kann ich nicht nachvollziehen. Es funktioniert hier sowohl lokal, als auch
+unter http://webdemo.opendtacho.org/ mit einer .DDD-Datei, die ich zuvor nach
+M_20061475_1532_S-AB_471_WMAG07XY58V123456.DDD umbenannt habe.
+
+> Kann mir einer sagen wie ich da vorgehen oder was ich da ändern kann?
+> Oder gibt es evtl. noch ein anderes "lesbares" Format?
+
+Es gibt auch noch die Möglichkeit, eine .DDD-Datei auf einer Shell mit dem Formatwandler
+nach XML zu konvertieren.
+
+Dazu das Snapshot von http://dtacho.berlios.de/jar/dtacho-20080512.jar herunterladen.
+Der Aufruf erfolgt dann mit
+
+$ java -jar dtacho-20080512.jar M_20061475_1532_S-AB_471_WMAG07XY58V123456.DDD
+
+Es wird dazu eine aktuelle Java Laufzeitumgebung (JRE) 6 benötigt.
+
+
+HTH
+
+-- 
+Gerald
+
+_______________________________________________________________________
+EINE FÜR ALLE: die kostenlose WEB.DE-Plattform für Freunde und Deine
+Homepage mit eigenem Namen. Jetzt starten! http://unddu.de/?kid=kid at mf2
+
+
+
+From heidejulia at freenet.de  Fri Aug  8 10:11:28 2008
+From: heidejulia at freenet.de (heidejulia at freenet.de)
+Date: Fri, 08 Aug 2008 10:11:28 +0200
+Subject: [Dtacho-users] Dtacho-users Nachrichtensammlung, Band 2,
+	Eintrag 1
+Message-ID: <E1KRN4K-0003gp-I5@www14.emo.freenet-rz.de>
+
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/dtacho-users/attachments/20080808/24b8641e/attachment.html>
+-------------- nächster Teil --------------
+Hallo,
+nach der aktuellen JAVA-Installation auf meinem PC hat es nun auch bei mir lokal geklappt.
+Vielen Dank
+Julia
+ 
+
+----- Original Message ----- 
+From: 
+To: 
+Sent: Thursday, August 07, 2008 12:01 PM
+Subject: Dtacho-users Nachrichtensammlung, Band 2, Eintrag 1
+
+
+Um e-Mails an die Liste Dtacho-users zu schicken, nutzen Sie bitte die
+Adresse
+
+dtacho-users at lists.berlios.de
+
+Um sich via Web von der Liste zu entfernen oder draufzusetzen:
+
+https://lists.berlios.de/mailman/listinfo/dtacho-users
+
+oder, via Email, schicken Sie eine Email mit dem Wort 'help' in
+Subject/Betreff oder im Text an
+
+dtacho-users-request at lists.berlios.de
+
+Sie koennen den Listenverw.html
+
+------------------------------
+
+Message: 2
+Date: Wed, 06 Aug 2008 18:30:07 +0200
+From: Gerald Schnabel 
+Subject: [Dtacho-users]  Fahrer- und Ger?daten in lesbares Format
+To: dtacho-users at lists.berlios.de
+Message-ID: 
+Content-Type: text/plain; charset=iso-8859-15
+
+Hallo,
+
+Julia Heide schrieb am 06.08.08, 13:59:51 Uhr:
+
+> Versuche zur Konvertierung von ddd nach XML unter
+http://webdemo.opendtacho.org/
+> sind gescheitert mit dem Hinweis "Ung?ger Dateiname!" Konnte jedoch nix
+ung?ges
+> erkennen.
+>
+> M_20061475_1532_S-AB_471_WMAG07XY58V123456.DDD
+>
+> G?ge Dateien haben die Form C_*.DDD und M_*.DDD
+> *: erlaubt sind nur alphanumerische Zeichen, Leerzeichen, Punkt, Minus und
+Unterstrich.
+
+Hm, das kann ich nicht nachvollziehen. Es funktioniert hier sowohl lokal,
+als auch
+unter http://webdemo.opendtacho.org/ mit einer .DDD-Datei, die ich zuvor
+nach
+M_20061475_1532_S-AB_471_WMAG07XY58V123456.DDD umbenannt habe.
+
+> Kann mir einer sagen wie ich da vorgehen oder was ich da ?ern kann?
+> Oder gibt es evtl. noch ein anderes "lesbares" Format?
+
+Es gibt auch noch die M?chkeit, eine .DDD-Datei auf einer Shell mit dem
+Formatwandler
+nach XML zu konvertieren.
+
+Dazu das Snapshot von http://dtacho.berlios.de/jar/dtacho-20080512.jar
+herunterladen.
+Der Aufruf erfolgt dann mit
+
+$ java -jar dtacho-20080512.jar
+M_20061475_1532_S-AB_471_WMAG07XY58V123456.DDD
+
+Es wird dazu eine aktuelle Java Laufzeitumgebung (JRE) 6 ben?t.
+
+
+HTH
+
+-- 
+Gerald
+
+_______________________________________________________________________
+EINE F? ALLE: die kostenlose WEB.DE-Plattform f?reunde und Deine
+Homepage mit eigenem Namen. Jetzt starten! http://unddu.de/?kid=kid at mf2
+
+
+
+------------------------------
+
+
+_______________________________________________
+Dtacho-users mailing list
+Dtacho-users at lists.berlios.de
+https://lists.berlios.de/mailman/listinfo/dtacho-users
+
+
+Ende Dtacho-users Nachrichtensammlung, Band 2, Eintrag 1
+********************************************************
+
+
+Unbegrenzter Speicher, Top-Spamschutz, 120 SMS und eigene E-MailDomain inkl.
+http://office.freenet.de/dienste/emailoffice/produktuebersicht/power/mail/index.html
+

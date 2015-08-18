@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Dtacho-users] fahlinx
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/dtacho-users/2009-November/index.html" >
+   <LINK REL="made"  HREF="mailto:dtacho-users%40lists.berlios.de?Subject=Re%3A%20%5BDtacho-users%5D%20fahlinx&In-Reply-To=%3C200911202036.53459.linux%40sm-recycling.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000013.html">
+   <LINK REL="Next"  HREF="000015.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Dtacho-users] fahlinx</H1>
+    <B>Stefan</B> 
+    <A
+    HREF="mailto:dtacho-users%40lists.berlios.de?Subject=Re%3A%20%5BDtacho-users%5D%20fahlinx&In-Reply-To=%3C200911202036.53459.linux%40sm-recycling.de%3E"
+           TITLE="[Dtacho-users] fahlinx">linux at sm-recycling.de
+                  </A><BR>
+    <I>Fr Nov 20 20:36:53 CET 2009</I>
+    <P><UL>
+        <LI>Vorherige Nachricht: <A HREF="000013.html">[Dtacho-users] fahlinx
+</A></li>
+        <LI>Nächste Nachricht: <A HREF="000015.html">[Dtacho-users] Fahrerkarten ATR
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#14">[ Datum ]</a>
+              <a href="thread.html#14">[ Thema ]</a>
+              <a href="subject.html#14">[ Betreff (Subject) ]</a>
+              <a href="author.html#14">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>Hello maf,
+
+sorry i think it is no problem of the fahrlinx script. there must be somethink 
+other wrong.
+
+Like i wrote, in the script you select the date and read 4 bytes from that 
+pointer
+
+It cout be that there is an different in the UK and German Card, but it is 
+first an Europen Standard and when i read 4 Byte and got 6 or more Byte there 
+is something other wrong.
+
+I Think it is the best you fix first your Pango Probelm real and with -nodep 
+Option.
+
+That can have many resurlts.
+
+stefan
+
+
+Am Freitag 20 November 2009 15:16:10 schrieben Sie:
+&gt;<i> Hallo Stefan.
+</I>&gt;<i> Ich glaube, Pango ist etwas für fonts mit gnome.
+</I>&gt;<i> 
+</I>&gt;<i> Ich habe freefonts entfernt, und jezt gibt Pango kein error.  Aber
+</I>&gt;<i>  farhlinx.py ist doch kaputt...
+</I>&gt;<i> 
+</I>&gt;<i> Ich habe pango entfernt (rpm -e --nodeps ... ja, ja, keine gute Idee, aber
+</I>&gt;<i> ungefähr 450 dependencies!) und python (wx error) nicht laufen könnte.
+</I>&gt;<i> 
+</I>&gt;<i> Mit pango installiert, (aber mit kein font error), output von fahrlinx.py
+</I>&gt;<i>  ist:
+</I>&gt;<i> 
+</I>&gt;<i> &lt;SNIP&gt;
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/dtacho-users">maf at skaro</A>:~/Desktop/fahrlinx-test&gt; ./fahrlinx.py
+</I>&gt;<i> response [231, 107, 127, 0, 0, 6, 0, 0, 0, 0, 0, 0] 0 175
+</I>&gt;<i> ct 71620992071974489491920388096
+</I>&gt;<i> Traceback (most recent call last):
+</I>&gt;<i> 
+</I>&gt;<i> File
+</I>&gt;<i>  &quot;/usr/local/lib64/python2.5/site-packages/smartcard/wx/SimpleSCardAppFrame
+</I>&gt;<i> .py&quot;, line 130, in OnActivateCard
+</I>&gt;<i>     self.ActivateCard( itemdata )
+</I>&gt;<i> 
+</I>&gt;<i> File
+</I>&gt;<i>  &quot;/usr/local/lib64/python2.5/site-packages/smartcard/wx/SimpleSCardAppFrame
+</I>&gt;<i> .py&quot;, line 112, in ActivateCard
+</I>&gt;<i>     self.dialogpanel.OnActivateCard( card )
+</I>&gt;<i>   File &quot;/home/maf/Desktop/fahrlinx-test/Fahrlinx.py&quot;, line 178, in
+</I>&gt;<i> OnActivateCard
+</I>&gt;<i>     datumlesen( self )
+</I>&gt;<i>   File &quot;/home/maf/Desktop/fahrlinx-test/Fahrlinx.py&quot;, line 734, in
+</I>&gt;<i>  datumlesen rd = gmtime(ct)
+</I>&gt;<i> ValueError: timestamp out of range for platform time_t
+</I>&gt;<i> &lt;SNAP&gt;
+</I>&gt;<i> 
+</I>&gt;<i> Vielleicht gibts ein kleiner Unterschied zwischen den Britische- und
+</I>&gt;<i>  Deutsche- Karten?
+</I>&gt;<i> 
+</I>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Vorherige Nachricht: <A HREF="000013.html">[Dtacho-users] fahlinx
+</A></li>
+	<LI>Nächste Nachricht: <A HREF="000015.html">[Dtacho-users] Fahrerkarten ATR
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#14">[ Datum ]</a>
+              <a href="thread.html#14">[ Thema ]</a>
+              <a href="subject.html#14">[ Betreff (Subject)]</a>
+              <a href="author.html#14">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/dtacho-users">Mehr Informationen &uuml;ber die Mailingliste Dtacho-users</a><br>
+</body></html>

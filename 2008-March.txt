@@ -1,0 +1,92 @@
+From c at Hiemisch.de  Sun Mar  9 09:35:47 2008
+From: c at Hiemisch.de (c at Hiemisch.de)
+Date: Sun, 9 Mar 2008 09:35:47 +0100
+Subject: [Dtacho-users] C_Driver_Card.dtd fehlt
+Message-ID: <000501c881c0$934c1540$fe78a8c0@PC300>
+
+Hallo,
+
+ 
+
+ich habe mir das Programm „Formatwandler“ (dtacho-20080303.jar)
+heruntergeladen
+
+und versucht aus einer Fahrer DDD Datei eine XML Datei zu erzeugen. 
+
+Die XML Datei wurde auch erzeugt. Beim Aufruf dieser Datei erhalte ich die 
+
+Meldung dass die Ressource 'C_Driver_Card.dtd' nicht gefunden werden kann.
+
+Kann mir hierzu jemand einen Tipp geben woran das liegt, bzw. woher ich
+diese Datei bekomme ?
+
+(Vermutlich habe ich etwas grundlegendes Übersehen.)
+
+ 
+
+Hintergrund oder was möchte ich erreichen:
+
+Ich habe die Anforderung die DDD Datei jeden Abend automatisch auf einen 
+
+Server (Windows 2003) auszulesen und ein Tagesprotokoll von dem vorherigen
+Tag 
+
+auszudrucken. (Die DDD Datei liegt auf dem Server Tagesaktuell vor)
+
+Hat hierzu jemand schon Erfahrung gemacht ?
+
+ 
+
+Gruß Carsten
+
+ 
+
+-------------- nächster Teil --------------
+Ein Dateianhang mit HTML-Daten wurde abgetrennt...
+URL: <https://lists.berlios.de/pipermail/dtacho-users/attachments/20080309/293a1f96/attachment.html>
+
+From deetee at users.berlios.de  Sun Mar  9 22:14:25 2008
+From: deetee at users.berlios.de (Gerald Schnabel)
+Date: Sun, 09 Mar 2008 22:14:25 +0100
+Subject: [Dtacho-users] C_Driver_Card.dtd fehlt
+Message-ID: <1708339551@web.de>
+
+
+Hallo Carsten,
+
+> ich habe mir das Programm „Formatwandler“ (dtacho-20080303.jar) heruntergeladen
+> und versucht aus einer Fahrer DDD Datei eine XML Datei zu erzeugen.
+> Die XML Datei wurde auch erzeugt. Beim Aufruf dieser Datei erhalte ich die
+> Meldung dass die Ressource 'C_Driver_Card.dtd' nicht gefunden werden kann.
+> Kann mir hierzu jemand einen Tipp geben woran das liegt, bzw. woher ich diese Datei bekomme ?
+> (Vermutlich habe ich etwas grundlegendes Übersehen.)
+
+Die .dtd-Dateien C_Driver_Card.dtd und M_Vehicle_Unit.dtd sind im SVN-Snapshot enthalten. Diese
+beschreiben die XML-Dateien (DTD = Document Type Definition) und können zur Validierung verwendet
+werden.
+
+Wenn die .dtd-Dateien fehlen kommt es je nach Anwendung, mit der die XML-Dateien geöffnet wird,
+zu Problemen, da nicht validiert werden kann...
+
+Ich die beiden .dtd-Dateien jetzt auch unter http://dtacho.berlios.de/dtd/ und http://dtacho.berlios.de/jar/
+bereitgestellt.
+
+Danke für das Feedback. 
+
+> Hintergrund oder was möchte ich erreichen:
+> Ich habe die Anforderung die DDD Datei jeden Abend automatisch auf einen
+> Server (Windows 2003) auszulesen und ein Tagesprotokoll von dem vorherigen Tag
+> auszudrucken. (Die DDD Datei liegt auf dem Server Tagesaktuell vor)
+> Hat hierzu jemand schon Erfahrung gemacht ?
+
+Momentaner Status des Projekts digitaler-tachograph.org ist, dass der Formatwandler fertig ist.
+Mit der Auswertung der Daten werden wir uns die nächste Zeit beschäftigen.
+
+Gruß Gerald
+
+_________________________________________________________________________
+In 5 Schritten zur eigenen Homepage. Jetzt Domain sichern und gestalten! 
+Nur 3,99 EUR/Monat! http://www.maildomain.web.de/?mc=021114
+
+
+

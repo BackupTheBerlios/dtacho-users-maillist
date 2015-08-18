@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Dtacho-users] Fwd: Hilfe mit Farherkarte Daten, bitte.
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/dtacho-users/2009-November/index.html" >
+   <LINK REL="made"  HREF="mailto:dtacho-users%40lists.berlios.de?Subject=Re%3A%20%5BDtacho-users%5D%20Fwd%3A%20Hilfe%20mit%20Farherkarte%20Daten%2C%20bitte.&In-Reply-To=%3C200911191459.02020.maf%40chilwell.net%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <LINK REL="Previous"  HREF="000008.html">
+   <LINK REL="Next"  HREF="000010.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Dtacho-users] Fwd: Hilfe mit Farherkarte Daten, bitte.</H1>
+    <B>Maf. King</B> 
+    <A
+    HREF="mailto:dtacho-users%40lists.berlios.de?Subject=Re%3A%20%5BDtacho-users%5D%20Fwd%3A%20Hilfe%20mit%20Farherkarte%20Daten%2C%20bitte.&In-Reply-To=%3C200911191459.02020.maf%40chilwell.net%3E"
+           TITLE="[Dtacho-users] Fwd: Hilfe mit Farherkarte Daten, bitte.">maf at chilwell.net
+                  </A><BR>
+    <I>Do Nov 19 15:58:56 CET 2009</I>
+    <P><UL>
+        <LI>Vorherige Nachricht: <A HREF="000008.html">[Dtacho-users] Fwd: Hilfe mit Farherkarte Daten, bitte.
+</A></li>
+        <LI>Nächste Nachricht: <A HREF="000010.html">[Dtacho-users] Fwd: Hilfe mit Farherkarte Daten, bitte.
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B> 
+              <a href="date.html#9">[ Datum ]</a>
+              <a href="thread.html#9">[ Thema ]</a>
+              <a href="subject.html#9">[ Betreff (Subject) ]</a>
+              <a href="author.html#9">[ Autor ]</a>
+         </LI>
+       </UL>
+    <HR>
+<!--beginarticle-->
+<PRE>On Wednesday 18 November 2009 12:21:45 Juergen Weinert wrote:
+&gt;<i> Hello,
+</I>&gt;<i> thanks for your good german.
+</I>&gt;<i>
+</I>&gt;<i> It is possible to use the opendtacho software to download the data from
+</I>&gt;<i> a driver card. You can find it under <A HREF="http://fahrlinx.berlios.de/.">http://fahrlinx.berlios.de/.</A>
+</I>&gt;<i>
+</I>
+Gruß, Jürgen.
+
+Danke für Ihre hilfe. 
+Aber, fahrlinx.py funktioniert nicht, mit die folgende error:
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/dtacho-users">maf at skaro</A>:~&gt; /usr/bin/python fahrlinx.py
+
+Traceback (most recent call last):
+File &quot;/usr/local/lib64/python2.5/site-packages/smartcard/wx/SimpleSCardAppFrame.py&quot;, 
+line 130, in OnActivateCard
+    self.ActivateCard( itemdata )
+  
+File &quot;/usr/local/lib64/python2.5/site-packages/smartcard/wx/SimpleSCardAppFrame.py&quot;, 
+line 112, in ActivateCard
+    self.dialogpanel.OnActivateCard( card )
+  File &quot;/home/maf/Fahrlinx.py&quot;, line 178, in OnActivateCard
+    datumlesen( self )
+  File &quot;/home/maf/Fahrlinx.py&quot;, line 732, in datumlesen
+    rd = gmtime(ct)
+OverflowError: long int too large to convert to float
+                                                            
+und nur ungefähr 200 bytes ausgelest sind. (attached)
+
+Ich kenne python nicht.   Bitte, haben Sie noch eine Idee?
+
+OpenSUSE 11.0,  pcsc-lite version 1.4.100, 
+&quot;Kartenleserapperat&quot;: Bus 002 Device 009: ID 072f:9000 Advanced Card Systems, 
+Ltd ACR38 AC1038-based Smart Card Reader
+
+Dankeschön
+Maf.
+
+
+
+
+&gt;<i> After that you can convert your DDD-File with
+</I>&gt;<i> <A HREF="http://webdemo.opendtacho.org/">http://webdemo.opendtacho.org/</A> to a XML-File.
+</I>&gt;<i>
+</I>&gt;<i> If you are downloading and installing our project from
+</I>&gt;<i> <A HREF="http://developer.berlios.de/svn/?group_id=9144">http://developer.berlios.de/svn/?group_id=9144</A> you can insert the DDD-File
+</I>&gt;<i> in the application with database and make your first reports.
+</I>&gt;<i>
+</I>&gt;<i> Nice greetings.
+</I>&gt;<i>
+</I>&gt;<i> Am Dienstag, 17. November 2009 schrieb Maf. King:
+</I>&gt;<i> &gt; ----------  Forwarded Message  ----------
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Subject: Hilfe mit Farherkarte Daten, bitte.
+</I>&gt;<i> &gt; Date: Monday 16 November 2009
+</I>&gt;<i> &gt; From: &quot;Maf. King&quot; &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/dtacho-users">maf at chilwell.net</A>&gt;
+</I>&gt;<i> &gt; To: <A HREF="https://lists.berlios.de/mailman/listinfo/dtacho-users">info at digitaler-tachograph.org</A>
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Hello,
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; leider ist meine Deutsch schlecht - also Englisch auch hierunter ist....
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Wissen Sie ob es möglich im moment ist, die Daten von einer Farherkarte
+</I>&gt;<i> &gt; auszulesen? - naturlich mit Linux weil ich habe keine Windows PC!
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Wenn ja, können Sie mir hilfen, bitte?
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; ~English~
+</I>&gt;<i> &gt; Is it possible to use the opendtacho software to download the data from
+</I>&gt;<i> &gt; a driver card?
+</I>&gt;<i> &gt; I need to take a copy of the card, and I don't have access to a windows
+</I>&gt;<i> &gt; PC.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; If you know of a way, could you offer any advice, please?
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; Viele Danke / Many Thanks,
+</I>&gt;<i> &gt; Maf.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt; -------------------------------------------------------
+</I>
+
+
+-- 
+Maf. King
+PGP Key fingerprint = 8D68 A91F 733B 2C1F 43B7  2B7C E591 E8E1 0DE7 C542
+
+
+-------------- nächster Teil --------------
+Ein Dateianhang mit Binärdaten wurde abgetrennt...
+Dateiname   : file.ddd
+Dateityp    : application/octet-stream
+Dateigröße  : 214 bytes
+Beschreibung: nicht verfügbar
+URL         : &lt;<A HREF="https://lists.berlios.de/pipermail/dtacho-users/attachments/20091119/4841dc76/attachment.obj">https://lists.berlios.de/pipermail/dtacho-users/attachments/20091119/4841dc76/attachment.obj</A>&gt;
+-------------- nächster Teil --------------
+Ein Dateianhang mit Binärdaten wurde abgetrennt...
+Dateiname   : signature.asc
+Dateityp    : application/pgp-signature
+Dateigröße  : 197 bytes
+Beschreibung: This is a digitally signed message part.
+URL         : &lt;<A HREF="https://lists.berlios.de/pipermail/dtacho-users/attachments/20091119/4841dc76/attachment.pgp">https://lists.berlios.de/pipermail/dtacho-users/attachments/20091119/4841dc76/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Vorherige Nachricht: <A HREF="000008.html">[Dtacho-users] Fwd: Hilfe mit Farherkarte Daten, bitte.
+</A></li>
+	<LI>Nächste Nachricht: <A HREF="000010.html">[Dtacho-users] Fwd: Hilfe mit Farherkarte Daten, bitte.
+</A></li>
+         <LI> <B>Nachrichten sortiert nach:</B>
+              <a href="date.html#9">[ Datum ]</a>
+              <a href="thread.html#9">[ Thema ]</a>
+              <a href="subject.html#9">[ Betreff (Subject)]</a>
+              <a href="author.html#9">[ Autor ]</a>
+         </LI>
+       </UL>
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/dtacho-users">Mehr Informationen &uuml;ber die Mailingliste Dtacho-users</a><br>
+</body></html>

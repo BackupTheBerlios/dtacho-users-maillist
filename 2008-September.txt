@@ -1,0 +1,281 @@
+From Sobchak at gmx.de  Mon Sep 15 21:52:45 2008
+From: Sobchak at gmx.de (Sobchak)
+Date: Mon, 15 Sep 2008 21:52:45 +0200
+Subject: [Dtacho-users] Datenstruktur der  DDD - Dateien
+References: <000801c9143a$7ee1dd80$2002a8c0@MIR>
+	<200809150844.53738.juergen.weinert@opendtacho.org>
+Message-ID: <000801c9176c$a30fd380$2102a8c0@MIR>
+
+Hallo Herr Weinert,
+
+vielen Dank für Ihr Mail. Die Amtsblätter der EU habe ich mir auch schon 
+angesehnen, leider ist der Inhalt für mich noch nicht so verständlich. Ich 
+werde mich aber dennoch weiter einarbeiten um die Aufgabe zu lösen. Ihren 
+Formatwandler habe ich mir ebenfalls bereits angesehn. Leider erhalte ich 
+immer eine Fehlermeldung das eine falsche Datei angegeben wurde obwohl ich 
+eine Originaldatei von einer Fahrerkarte verwende. Da bin ich mir auch noch 
+unsicher ob ich möglicherweise einen Fehler mache.
+
+Ist der Code zur Umsetzung des Formatwandlers denn öffentlich zugänglich? Es 
+würde mir sicher sehr helfen ein paar Codesegmente zu sehen um meinem 
+Verständnis auf die Sprünge zu helfen. Natürlich verstehe ich es wenn das 
+nicht möglich ist.
+
+Vielen Dank für Ihre Hilfsbereitschaft,
+
+Walter Solbach
+
+
+
+
+----- Original Message ----- 
+From: "Juergen Weinert" <juergen.weinert at opendtacho.org>
+To: "Sobchak" <Sobchak at gmx.de>
+Sent: Monday, September 15, 2008 8:44 AM
+Subject: Re: Datenstruktur der DDD - Dateien
+
+
+Hallo Herr Solbach,
+
+Am Donnerstag, 11. September 2008 schrieb Sobchak:
+> Guten Tag,
+>
+> auch ich interessiere mich für den digitalen Tachographen und die
+> gespeicherten Daten. Ich bin Softwareentwickler und habe eine spezielle
+> Anwendung entwickelt für ein Transportunternehmen. Aktuell würde ich
+> gerne die Daten aus den gespeicherten DDD Dateien weiterverarbeiten in
+> meiner Anwendung. Das ganze ist in der Verbreitung sehr begrenzt und hat
+> auch etwas mit meiner neugier bezüglich der Technik zu tun.
+>
+> Seit einiger Zeit versuche ich nun an Informationen zu kommen über den
+> Inhalt der DDD Dateien. Die Amtsblätter der EU geben leider keine
+> Auskunft wie mit den Binärdaten in den gespeicherten Datei umgegenagen
+> werden muß. Es fehlt mir eben die Datenstruktur um diese Informationen
+> weiterzuverarbeiten.
+>
+> In Ihrem Opentacho Projekt haben Sie bereits den Formatwandler
+> vorgestellt. Um soetwas zu entwickeln ist es ja auch notwendig die
+> Datenstruktur der Dateien zu kennen. Können Sie mir in diesem Punkt
+> einen Tip geben wo man diese Informationen bekommt, an wenn ich mich
+> wenden kann, oder ist es sogar möglich von Ihnen die Struktur der Daten
+> zu erhalten ? Möglicherweise auch gegen eine Spende. Ich fürchte zur
+> Mitarbeit in Ihrem Projekt reichen meine Linux und Javakenntnisse eher
+> nicht aus.
+
+Die Amtsblätter der EU sind hier sehr informativ.In der EWG Verordnung
+3821/85 finden Sie ab Seite 138 die genau Beschreibung der Datenstruktur
+der Fahrerkarten:
+
+http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:01985R3821-20070411:EN:NOT
+
+Eine Umsetzung der Datenstruktur können Sie auch aus dem Formatwandler
+erkennen.
+
+Zur Mitarbeit braucht man nicht unbedingt Linx- oder Javakenntnisse. Man
+kan uns auch durch vielfältige andere Weise, wie z.B.
+
+Durchführung von Tests
+Schreiben von Anleitungen, How-To's, FAQs, und Dokumentationen
+Übersetzung des Projektes in verschiedene Fremdsprachen
+Finanzielle Hilfe, um Teile der Projektarbeiten zu finanzieren
+
+unterstützen.
+
+>
+> Ich würde mich trotzdem freuen wenn Sie mir in beschriebenen Punkt
+> behilflich sein könnten.
+>
+> Viele Grüße
+> Walter Solbach
+
+
+-- 
+Gruß
+
+Jürgen Weinert
+
+www.opendtacho.org 
+
+
+
+From juergen.weinert at opendtacho.org  Wed Sep 24 08:25:19 2008
+From: juergen.weinert at opendtacho.org (Juergen Weinert)
+Date: Wed, 24 Sep 2008 08:25:19 +0200
+Subject: [Dtacho-users] Datenstruktur der  DDD - Dateien
+In-Reply-To: <001d01c919a5$7d9a4410$2002a8c0@MIR>
+References: <000801c9143a$7ee1dd80$2002a8c0@MIR>
+	<200809170759.32872.juergen.weinert@opendtacho.org>
+	<001d01c919a5$7d9a4410$2002a8c0@MIR>
+Message-ID: <200809240825.19234.juergen.weinert@opendtacho.org>
+
+Hallo Herr Solbach,
+die Bedeutung der Randnummer 104 finden Sie auf Seite 27 in dem PDF der 
+1360/2002:
+
+http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2002:207:0001:0252:DE:PDF
+
+Hier finden Sie ab Seite 119 z.B. auch nochmals die Beschreibung der 
+Struktur der Fahrerkarte.
+
+Am Donnerstag, 18. September 2008 schrieb Sobchak:
+> Hallo Herr Weinert,
+>
+> die Problematik mit dem Formatwandler konnte ich bisher nicht vermeiden.
+> Auch nach unbenennen der entsprechenden Datei, bzw. dem entfernen von
+> Leerzeichen im Dateinamen erhalte ich folgende Fehlermeldung :
+>
+> ***********************************************
+> Datei C:\C_1.DDD
+>
+> Ungültiger Dateiname!
+>
+> Gültige Dateien haben die Form C_*.DDD und M_*.DDD
+>
+> *: erlaubt sind nur alphanumerische Zeichen, Leerzeichen, Punkt, Minus
+> und Unterstrich.
+> ************************************************
+>
+> Ich habe mich bei Berlios angemeldet und mir schon einige Sachen zum
+> Thema angeschaut. Bei meiner Umsetzung bin ich auch schon
+> weitergekommen. Die Entschlüsselung der Fahrerkartendatei funktioniert
+> bereits, wenn auch noch nicht mit allen Daten. Ich programmiere momentan
+> die Umsetzung mit Delphi/Pascal, also noch nativ.
+>
+> Vielleicht finden Sie noch die Zeit für eine Antwort auf eine Frage zu
+> der ich keine Antwort finde.
+>
+> Bei einigen Datentypen gibt es einen Verweis auf Randnummern. Bisher
+> konnte ich dazu keine Information im Amtsblatt 1360/2002 finden. Ist
+> Ihnen eine Quelle bekannt wo man die Information bezüglich der
+> Randnummern erhalten kann bzw. eine genauere Beschreibung was sich
+> hinter dem Datentyp verbirgt?
+>
+> Beispiel: VuCompanyLocksData (Randnummer 104)
+>
+> Die Erklärung dazu lauter "Unternehmenssperren" was aber genau damit
+> gemeint wird leider nicht erklärt.
+>
+> Mit freundlichen Grüßen,
+> Walter Solbach
+>
+>
+>
+> ----- Original Message -----
+> From: "Juergen Weinert" <juergen.weinert at opendtacho.org>
+> To: "Sobchak" <Sobchak at gmx.de>
+> Sent: Wednesday, September 17, 2008 7:59 AM
+> Subject: Re: [Dtacho-users] Datenstruktur der DDD - Dateien
+>
+>
+> Hallo Herr Solbach,
+>
+> Am Montag, 15. September 2008 schrieb Sobchak:
+> > Hallo Herr Weinert,
+> >
+> > vielen Dank für Ihr Mail. Die Amtsblätter der EU habe ich mir auch
+> > schon angesehnen, leider ist der Inhalt für mich noch nicht so
+> > verständlich. Ich werde mich aber dennoch weiter einarbeiten um die
+> > Aufgabe zu lösen. Ihren Formatwandler habe ich mir ebenfalls bereits
+> > angesehn. Leider erhalte ich immer eine Fehlermeldung das eine falsche
+> > Datei angegeben wurde obwohl ich eine Originaldatei von einer
+> > Fahrerkarte verwende. Da bin ich mir auch noch unsicher ob ich
+> > möglicherweise einen Fehler mache.
+>
+> Versuchen Sie den Formatwandler unserer Homepage zu benutzen?
+> Der Dateinamen einer Fahrerkarte beginnt mit C_ und hat die Endung .DDD.
+> Daten des Massenspeichers beginnen mit einem M_.
+> Da in der Originaldatei im Dateinamen öfters Leerzeichen enthalten sind
+> kann es evtl. zu Problemen kommen. Hier ist es dann vielleicht sinnvoll
+> die Datei umzubenennen.
+>
+> > Ist der Code zur Umsetzung des Formatwandlers denn öffentlich
+> > zugänglich? Es würde mir sicher sehr helfen ein paar Codesegmente zu
+> > sehen um meinem Verständnis auf die Sprünge zu helfen. Natürlich
+> > verstehe ich es wenn das nicht möglich ist.
+>
+> Der Code ist öffentlich zugänglich und kann bei
+>
+>    http://developer.berlios.de/svn/?group_id=9144
+>
+> heruntergeladen werden.
+>
+> Sie können sich auch einen Code-Snapshots (s. Homepage) herunterladen
+> und dann das Programm auf Ihrem Rechner starten. Vorraussetzung ist hier
+> allerdings, dass Sie Java auf Ihrem Rechner installiert haben.
+>
+> > Vielen Dank für Ihre Hilfsbereitschaft,
+> >
+> > Walter Solbach
+> >
+> >
+> >
+> >
+> > ----- Original Message -----
+> > From: "Juergen Weinert" <juergen.weinert at opendtacho.org>
+> > To: "Sobchak" <Sobchak at gmx.de>
+> > Sent: Monday, September 15, 2008 8:44 AM
+> > Subject: Re: Datenstruktur der DDD - Dateien
+> >
+> >
+> > Hallo Herr Solbach,
+> >
+> > Am Donnerstag, 11. September 2008 schrieb Sobchak:
+> > > Guten Tag,
+> > >
+> > > auch ich interessiere mich für den digitalen Tachographen und die
+> > > gespeicherten Daten. Ich bin Softwareentwickler und habe eine
+> > > spezielle Anwendung entwickelt für ein Transportunternehmen. Aktuell
+> > > würde ich gerne die Daten aus den gespeicherten DDD Dateien
+> > > weiterverarbeiten in meiner Anwendung. Das ganze ist in der
+> > > Verbreitung sehr begrenzt und hat auch etwas mit meiner neugier
+> > > bezüglich der Technik zu tun.
+> > >
+> > > Seit einiger Zeit versuche ich nun an Informationen zu kommen über
+> > > den Inhalt der DDD Dateien. Die Amtsblätter der EU geben leider
+> > > keine Auskunft wie mit den Binärdaten in den gespeicherten Datei
+> > > umgegenagen werden muß. Es fehlt mir eben die Datenstruktur um diese
+> > > Informationen weiterzuverarbeiten.
+> > >
+> > > In Ihrem Opentacho Projekt haben Sie bereits den Formatwandler
+> > > vorgestellt. Um soetwas zu entwickeln ist es ja auch notwendig die
+> > > Datenstruktur der Dateien zu kennen. Können Sie mir in diesem Punkt
+> > > einen Tip geben wo man diese Informationen bekommt, an wenn ich mich
+> > > wenden kann, oder ist es sogar möglich von Ihnen die Struktur der
+> > > Daten zu erhalten ? Möglicherweise auch gegen eine Spende. Ich
+> > > fürchte zur Mitarbeit in Ihrem Projekt reichen meine Linux und
+> > > Javakenntnisse eher nicht aus.
+> >
+> > Die Amtsblätter der EU sind hier sehr informativ.In der EWG Verordnung
+> > 3821/85 finden Sie ab Seite 138 die genau Beschreibung der
+> > Datenstruktur der Fahrerkarten:
+> >
+> > http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:01985R3821
+> >-2 0070411:EN:NOT
+> >
+> > Eine Umsetzung der Datenstruktur können Sie auch aus dem Formatwandler
+> > erkennen.
+> >
+> > Zur Mitarbeit braucht man nicht unbedingt Linx- oder Javakenntnisse.
+> > Man kan uns auch durch vielfältige andere Weise, wie z.B.
+> >
+> > Durchführung von Tests
+> > Schreiben von Anleitungen, How-To's, FAQs, und Dokumentationen
+> > Übersetzung des Projektes in verschiedene Fremdsprachen
+> > Finanzielle Hilfe, um Teile der Projektarbeiten zu finanzieren
+> >
+> > unterstützen.
+> >
+> > > Ich würde mich trotzdem freuen wenn Sie mir in beschriebenen Punkt
+> > > behilflich sein könnten.
+> > >
+> > > Viele Grüße
+> > > Walter Solbach
+
+-- 
+Gruß
+
+Jürgen Weinert
+
+www.opendtacho.org
+
+
